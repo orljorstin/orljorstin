@@ -2,7 +2,7 @@ name: Generate Pacman Contribution Graph
 
 on:
   schedule:
-    - cron: '0 0 * * *' # runs every day
+    - cron: '0 0 * * *'  # Runs daily at midnight
   workflow_dispatch:
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Generate Pacman SVG
-        uses: Platane/pacman-canvas@v4
+        uses: Platane/pacman-canvas@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           user_name: orljorstin
