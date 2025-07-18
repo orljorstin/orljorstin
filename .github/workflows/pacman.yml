@@ -1,0 +1,19 @@
+name: Generate Pacman Contribution Graph
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # runs every day
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Generate Pacman SVG
+        uses: Platane/pacman-canvas@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          user_name: orljorstin
+          output_branch: output
