@@ -1,19 +1,24 @@
-name: Generate Pacman Contribution Graph
+name: Generate Contribution Graph (Pacman Style)
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight
+    - cron: '0 0 * * *' # Every day at midnight
   workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Generate Pacman SVG
-        uses: Platane/pacman-canvas@v3
+      - uses: Platane/snk@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          user_name: orljorstin
-          output_branch: output
+          github_user_name: orljorstin
+          outputs: |
+            dist/pacman.svg?animation=pacman
+            dist/pacman-dark.svg?animation=pacman&palette=github-dark
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
