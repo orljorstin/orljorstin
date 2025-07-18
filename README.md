@@ -1,5 +1,5 @@
 <h1 align="center">Hey 👋 I'm Earl — Cybersecurity Student</h1>
-<p align="center">💻 IT student · 🛡️ Future security pro · 💡 Open-source learner</p>
+<h3 align="center">💻 IT student · 🛡️ Future security pro · 💡 Open-source learner</h3>
 
 ---
 
