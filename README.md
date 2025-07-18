@@ -38,13 +38,13 @@
 
 ---
 
-<h3 align="center">🌱 Contribution Activity</h3>
+<h3 align="center">🐍 Contribution Activity</h3>
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/orljorstin/orljorstin/output/pacman-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/orljorstin/orljorstin/output/pacman.svg">
-    <img alt="Pacman contribution graph" src="https://raw.githubusercontent.com/orljorstin/orljorstin/output/pacman.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/orljorstin/orljorstin/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/orljorstin/orljorstin/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/orljorstin/orljorstin/output/github-contribution-grid-snake.svg" />
   </picture>
 </div>
 
