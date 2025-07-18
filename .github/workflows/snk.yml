@@ -1,23 +1,25 @@
-name: Generate Contribution Graph (Pacman Style)
+name: Generate Contribution Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *" # runs daily at midnight UTC
   workflow_dispatch:
 
 permissions:
-  contents: write  # Needed to push to the output branch
+  contents: write
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: Platane/snk@v3
+      - name: Generate Snake
+        uses: Platane/snk@v3
         with:
           github_user_name: orljorstin
           outputs: |
-            dist/pacman.svg?animation=pacman
-            dist/pacman-dark.svg?animation=pacman&palette=github-dark
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
