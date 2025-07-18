@@ -42,9 +42,9 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/orljorstin/orljorstin/output/pacman-contribution-graph-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/orljorstin/orljorstin/output/pacman-contribution-graph.svg">
-    <img alt="Contribution Graph" src="https://raw.githubusercontent.com/orljorstin/orljorstin/output/pacman-contribution-graph.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/orljorstin/orljorstin/output/pacman-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/orljorstin/orljorstin/output/pacman.svg">
+    <img alt="Pacman contribution graph" src="https://raw.githubusercontent.com/orljorstin/orljorstin/output/pacman.svg">
   </picture>
 </div>
 
